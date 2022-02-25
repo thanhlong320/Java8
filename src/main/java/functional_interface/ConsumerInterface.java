@@ -4,7 +4,7 @@ import java.util.function.Consumer;
 
 public class ConsumerInterface {
     public static void print(String value){
-        Consumer<String> print = x -> System.out.println(x);
+        Consumer<String> print = System.out::println;
         print.accept(value);
     }
 
